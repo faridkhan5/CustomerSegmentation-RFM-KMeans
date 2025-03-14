@@ -22,7 +22,7 @@ This project performs customer segmentation using RFM (Recency, Frequency, and M
 
   ![](images/new_vs_existing_customers.png)
   * Existing customers show a positive trend, but the number of new customers is not increasing.
-  * New customer ratio has declined over time.
+  * New customer acquisition has decline by 87% over a period of 1 year.
  
 ### Feature Transformation
 * log transformation on RFM features, which were all heavily right-skewed.

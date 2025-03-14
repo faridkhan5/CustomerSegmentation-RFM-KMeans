@@ -9,21 +9,31 @@ This project performs customer segmentation using RFM (Recency, Frequency, and M
 
 ### EDA
 * Monthly Revenue Trends:
+
+  ![](images/monthly_revenue.png)
   * stable growth from Jan to Aug
   * significant revenue spikes in Sep and Nov, with peak sales in Nov 2011.
 * Monthly Growth Rate:
+
+  ![](images/monthly_growth_rate.png)
   * decline of 21% in April.
   * rapid growth of 60% in September and 46% in November.
 * Customer Trends:
+
+  ![](images/new_vs_existing_customers.png)
   * Existing customers show a positive trend, but the number of new customers is not increasing.
   * New customer ratio has declined over time.
  
 ### Feature Transformation
 * log transformation on RFM features, which were all heavily right-skewed.
+  
+  ![](images/rfm_skewness.png)
   * distance based models perform best when data is not skewed.
  
 ### RFM Clustering
-* clusters were sorted on a ranking basis, with 1 being the most preferred cluster.
+
+![](images/rfm_segmentation.png)
+* clusters were sorted on a ranking basis, with 1 being the best-case scenario for each feature.
 * points were assigned to a cluster based on pre-defined filters on RFM set for each cluster.
 * achieved a davies-bouldin score of 2.05.
 
@@ -54,7 +64,11 @@ This project performs customer segmentation using RFM (Recency, Frequency, and M
 ### K-Means Clustering
 * elbow method was used for finding the optimal number of cluster which turned out to be 5.
 * 3D scatter plot was used to visualize the clusters.
+
+  ![](images/kmeans_clustering.png)
 * TSNE was used to perform dimensionality reduction and visualize the clusters in 2D.
+
+  ![](images/kmeans_tsne_clusters.png)
 * achieved the lowest davies-bouldin score of 0.92.
 
 ### K-Means Recommendations
